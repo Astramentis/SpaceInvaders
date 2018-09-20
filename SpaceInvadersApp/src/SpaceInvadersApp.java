@@ -16,6 +16,13 @@ public class SpaceInvadersApp extends Application {
     private Parent createContent() {
         root.setPrefSize(600,800);
         root.getChildren().add(player);
+        AnimationTimer timer = new AnimationTimer() {
+            @Override
+            public void handle(long now) {
+                update();
+            }
+        };
+        timer.start();
         return root;
     }
     private void shoot(){
