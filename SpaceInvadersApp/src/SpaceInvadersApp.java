@@ -17,6 +17,7 @@ public class SpaceInvadersApp extends Application {
     private Parent createContent() {
         root.setPrefSize(600,800);
         root.getChildren().add(player);
+        //TODO: remake in CSS styling
 
         AnimationTimer timer = new AnimationTimer() {
             @Override
@@ -96,6 +97,8 @@ public class SpaceInvadersApp extends Application {
                         case SPACE:
                             shoot(player);
                             break;
+                        case R:
+                            //TODO: add stage reset
                     }
                 });
 
