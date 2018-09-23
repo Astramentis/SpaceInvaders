@@ -19,13 +19,13 @@ public class SpaceInvadersApp extends Application {
     private Pane root = new Pane();
     private double t = 0;
     private Sprite player = new Sprite(300, 750, 40, 40, "player", Color.BLUE);
-    ImageView image = new ImageView(new Image(getClass().getResourceAsStream("/res/10-512.png")));
+    //ImageView image = new ImageView(new Image(getClass().getResourceAsStream("/res/10-512.png")));
 
 
     private Parent createContent() {
         root.setPrefSize(600, 800);
         root.getChildren().add(player);
-        root.getChildren().add(image);
+        //root.getChildren().add(image);
 
         AnimationTimer timer = new AnimationTimer() {
             @Override
